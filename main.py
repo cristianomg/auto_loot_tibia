@@ -26,7 +26,7 @@ def on_release(key):
 
 def set_position():
     position = pyautogui.position()
-    write_position({'x':position.x, 'y': position.y})
+    write_position(position)
 
 def main():
     with keyboard.Listener(

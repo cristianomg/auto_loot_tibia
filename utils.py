@@ -2,7 +2,7 @@ POSITIONS_FILE_NAME = 'positions.txt'
 
 def write_position(position):
     f = open(POSITIONS_FILE_NAME, 'a')
-    f.write('{},{}\n'.format(position['x'], position['y']))
+    f.write('{},{}\n'.format(position.x, position.y))
     f.close()
 
 def load_positions():
